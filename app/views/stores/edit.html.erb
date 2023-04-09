@@ -1,0 +1,21 @@
+<h1>更新商店</h1>
+
+<%= form_for(@store) do |s| %>
+    <div class="store">
+        <%= s.label :title , '店名'%>
+        <%= s.text_field :title%>
+    </div>
+     <div class="store">
+        <%= s.label :address , '地址'%>
+        <%= s.text_field :address%>
+    </div>
+    <div class="store">
+        <%= s.label :tel , '聯絡電話'%>
+        <%= s.text_field :tel%>
+    </div>
+
+    <%= s.submit '新增'%>
+
+
+
+<% end %>

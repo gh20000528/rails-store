@@ -1,1 +1,29 @@
-<h1>首頁</h1>
+
+<div class="block">
+
+    <%= link_to '新增商店' , new_store_path%>
+
+</div>
+
+
+
+<section >
+<% @stores.each do |store|%>
+    <div class="commodity border">
+        <h2><%= store.title%></h2>
+        <div class="intro">
+            <p><%= store.address%></p>
+            <p><%= store.tel%></p>
+        </div>
+        <div class="deit">
+            <%= link_to '檢視' , store_path(store)%>
+            <%= link_to '修改' , edit_store_path(store)%>
+            <%= link_to '刪除' , store_path(store) , method:'delete'%>
+        
+        </div>
+        
+    </div>
+
+
+<% end %>
+</section>
