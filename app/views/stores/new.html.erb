@@ -1,22 +1,39 @@
-<h1>新增商店</h1>
 
-<%= form_for(@store) do |s| %>
-    <div class="store">
-        <%= s.label :title , '店名'%>
-        <%= s.text_field :title%>
+
+<section class="container ">
+    <h1 class="mb-5 text-lg text-center text-white">新增商店</h1>
+    <div class="bg-white border rounded-md">
+    
+        <%= form_for(@store) do |s| %>
+            <div class="flex justify-center my-10">
+            
+                    <div class="m-4">
+                        <%= s.label :title , '店名:'%>
+                        <%= s.text_field :title , class:'rounded-md'%>
+                    </div>
+                    <div class="m-4">
+                        <%= s.label :address , '地址:'%>
+                        <%= s.text_field :address , class:'rounded-md'%>
+                    </div>
+                    <div class="m-4">
+                        <%= s.label :tel , '聯絡電話:'%>
+                        <%= s.text_field :tel , class:'rounded-md'%>
+                    </div>
+            </div>
+            <div class="container text-center ">
+            
+                <%= s.submit '新增' ,class:" btn btn-disable cursor-pointer w-1/4 "%>
+            
+            </div>
+        <% end %>
+    
+    
+    
+    
     </div>
-     <div class="store">
-        <%= s.label :address , '地址'%>
-        <%= s.text_field :address%>
-    </div>
-    <div class="store">
-        <%= s.label :tel , '聯絡電話'%>
-        <%= s.text_field :tel%>
-    </div>
 
-    <%= s.submit '新增'%>
+</section>
 
 
 
-<% end %>
   
