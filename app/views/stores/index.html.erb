@@ -1,5 +1,7 @@
 <main class="container ">
 
+
+
     <section class="text-center ">
         <div >
             <h1 class="mb-3 text-3xl text-white">店面列表</h1>
@@ -10,6 +12,13 @@
         </div>
     
     </section>
+
+    <form class="text-center">
+        <input class="rounded-md w-96" type="text" name="keyword" value="<%= params[:keyword] %>" placeholder="請輸入關鍵字...">
+        <input class="cursor-pointer btn btn-disable" type="submit" value="查詢">
+    </form>
+
+
     <section  class="grid grid-cols-3 gap-4 text-center">
         <% @stores.each do |store|%>
             <div class="mt-8 bg-white border rounded-md shadow-xl">
