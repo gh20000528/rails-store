@@ -18,7 +18,8 @@ class StoresController < ApplicationController
         end
     end
     def show
-        
+        @comment = Comment.new
+        @comments = @store.comments
     end
     def edit
         
