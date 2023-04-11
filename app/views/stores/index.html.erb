@@ -6,7 +6,7 @@
         <div >
             <h1 class="mb-3 text-3xl text-white">店面列表</h1>
         </div>
-        <div class="w-1/4 mx-auto btn btn-disable">
+        <div class="w-1/6 mx-auto btn btn-disable">
                 <%= link_to '新增商店' , new_store_path  %>
 
         </div>
@@ -23,14 +23,14 @@
         <% @stores.each do |store|%>
             <div class="mt-8 bg-white border rounded-md shadow-xl">
                 <h2 class="my-5 text-xl"><%= store.title%></h2>
-                <div class="my-3 ">
+                <div class="my-5 ">
                     <p> 地址：<%= store.address%></p>
                     <p> 電話：<%= store.tel%></p>
                 </div>
                 <div class="flex justify-around">
-                    <%= link_to '檢視' , store_path(store),  class:"  btn btn-disable cursor-pointer"%>
-                    <%= link_to '修改' , edit_store_path(store), class:" btn btn-disable cursor-pointer"%>
-                    <%= link_to '刪除' , store_path(store) , method:'delete' , class:" btn btn-disable cursor-pointer"%>
+                    <%= link_to '檢視' , store_path(store),  class:"  btn btn-disable "%>
+                    <%= link_to '修改' , edit_store_path(store), class:" btn btn-disable "%>
+                    <%= link_to '刪除' , store_path(store) , method:'delete' , class:" btn btn-disable "%>
                 
                 </div>
                 

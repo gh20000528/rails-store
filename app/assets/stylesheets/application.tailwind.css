@@ -17,6 +17,6 @@
 }
 
 .btn-disable {
-  @apply text-white bg-orange-600 rounded-md cursor-default;
+  @apply text-white bg-orange-600 rounded-md cursor-pointer;
 }
 

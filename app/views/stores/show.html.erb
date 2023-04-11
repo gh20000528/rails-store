@@ -21,7 +21,7 @@
             
                 <%= form_with(model: @comment, url: store_comments_path(@store)) do |form| %>
                     <%= form.text_area :content, class: 'w-1/2 rounded ', rows: 3 %>
-                    <%= form.submit "新增評論", class: 'block btn btn-disable w-1/4 m-auto' %>
+                    <%= form.submit "新增評論", class: 'block btn btn-disable w-1/4 m-auto mt-5'  %>
                 <% end %>
                 <section class="mt-2">
                     <%= render @comments %>
