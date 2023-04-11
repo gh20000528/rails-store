@@ -17,6 +17,11 @@ class CommentsController < ApplicationController
    end
 
    def update
+    if @comment.update(comment_params)
+      redirect_to @comment.store
+    else
+      render :edit
+    end
    end
 
    def destroy

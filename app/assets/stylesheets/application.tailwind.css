@@ -20,3 +20,7 @@
   @apply text-white bg-orange-600 rounded-md cursor-pointer;
 }
 
+.btn-primary{
+  @apply text-white bg-gray-400 rounded-md cursor-pointer;
+}
+

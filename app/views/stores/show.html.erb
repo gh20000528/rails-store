@@ -19,11 +19,16 @@
             <h2 class="mb-5 text-lg font-bold text-center">評論</h2>
             <div class="pb-10 text-center">
             
-                <%= form_with(model: @comment, url: store_comments_path(@store)) do |form| %>
-                    <%= form.text_area :content, class: 'w-1/2 rounded ', rows: 3 %>
-                    <%= form.submit "新增評論", class: 'block btn btn-disable w-1/4 m-auto mt-5'  %>
+                <%= form_with(model: @comment,id:'comment-form', url: store_comments_path(@store), data:{ controller: 'comment-form'} ) do |form| %>
+                    <%= form.text_area :content,
+                        class: 'w-1/2 rounded ',
+                        rows: 3 ,
+                        data:{
+                            action: 'input->comment-form#input'
+                        }%>
+                    <%= form.submit "新增評論", class: 'block btn btn-primary w-1/4 m-auto mt-5'  ,disabled: true, data:{comment_form_target: 'button'}%>
                 <% end %>
-                <section class="mt-2">
+                <section class="mt-2" >
                     <%= render @comments %>
                 </section>
             

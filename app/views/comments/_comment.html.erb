@@ -1,10 +1,16 @@
+
+
 <article class="flex justify-between p-5 mx-10 mb-5 border-b">
    <p>
      <%= comment.content %>
    </p>
 
    <footer class="my-1">
-     <%= link_to '編輯', '#', class: 'btn btn-disable' %>
+     <%= link_to '編輯', edit_comment_path(comment), class: 'btn btn-disable' %>
      <%= link_to '刪除', comment_path(comment), method: 'delete', data: { confirm: '確認刪除？'}, class: 'btn  btn-disable' %>
    </footer>
  </article>
+
+
+
+ 
