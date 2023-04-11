@@ -1,7 +1,8 @@
 class StoresController < ApplicationController
+    include Pagy::Backend
     before_action :find_store, only: [:edit, :update, :show, :destroy]
     def index
-        @stores = Store.all
+        @pagy , @stores = pagy(Store.all , items: 6)
         if params[:keyword].present?
             @stores = @stores.search(params[:keyword])
         end
