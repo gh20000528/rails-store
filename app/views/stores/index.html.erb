@@ -21,7 +21,7 @@
 
     <section  class="grid grid-cols-3 gap-4 text-center" , data-controller="sortable" >
         <% @stores.each do |store|%>
-            <div class="mt-8 bg-white border rounded-md shadow-xl">
+            <div class="mt-8 bg-white border rounded-md shadow-xl" data-store-id="<%= store.id %>">
                 <h2 class="my-5 text-xl"><%= store.title%></h2>
                 <div class="my-5 ">
                     <p> 地址：<%= store.address%></p>
