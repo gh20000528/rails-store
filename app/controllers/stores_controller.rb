@@ -20,7 +20,7 @@ class StoresController < ApplicationController
     end
     def show
         @comment = Comment.new
-        @comments = @store.comments
+        @comments = @store.comments.order(created_at: :desc)
     end
     def edit
         

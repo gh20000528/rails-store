@@ -9,3 +9,6 @@ application.register("comment-form", CommentFormController)
 
 import HelloController from "./hello_controller"
 application.register("hello", HelloController)
+
+import SortableController from "./sortable_controller"
+application.register("sortable", SortableController)

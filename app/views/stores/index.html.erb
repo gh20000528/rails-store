@@ -19,7 +19,7 @@
     </form>
 
 
-    <section  class="grid grid-cols-3 gap-4 text-center">
+    <section  class="grid grid-cols-3 gap-4 text-center" , data-controller="sortable" >
         <% @stores.each do |store|%>
             <div class="mt-8 bg-white border rounded-md shadow-xl">
                 <h2 class="my-5 text-xl"><%= store.title%></h2>
