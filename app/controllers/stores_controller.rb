@@ -1,4 +1,5 @@
 class StoresController < ApplicationController
+    before_action :authenticate_user!
     include Pagy::Backend
     before_action :find_store, only: [:edit, :update, :show, :destroy]
     def index
