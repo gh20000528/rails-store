@@ -12,20 +12,19 @@ module.exports = {
       fontFamily: {
         sans: ['Inter var', ...defaultTheme.fontFamily.sans],
       },
-      //在keyframes設定想要的動態
-      keyframes: {
-      //這個就是我們的箭頭動態啦往右上一直指
-      point: {
-        '0%': {},
-        '50%': {},
-        '100%': {},
-        }
-      },
-      //這邊是我們的animation命名
-      animation: {
-        wave: 'wave 2s ease-in-out infinite',
+    //   //在keyframes設定想要的動態
+    //   keyframes: {
+    //     wave: {
+    //       '0%': {clipOne},
+    //       '50%': {clipTwo},
+    //       '100%': {clipThree},
+    //       }
+    //   },
+    //   //這邊是我們的animation命名
+    //   animation: {
+    //     wave: 'wave 2s ease-in-out infinite',
+    //  },
      },
-    },
   },
   plugins: [
     require('@tailwindcss/forms'),
