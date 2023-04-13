@@ -16,7 +16,7 @@
   @apply px-3 py-2 text-center mb-4
 }
 .btn-big{
-  @apply px-10 py-3 mb-4
+  @apply px-10 py-3 bg-orange-600 text-white rounded-lg border-b-4 border-b-orange-900 hover:border-b-0 transition-all ease-in-out duration-100
 }
 
 .btn-disable {
@@ -31,7 +31,8 @@
 
 @keyframes wave {
   0% {
-    clip-path: polygon(0% 38%, 21% 40% , 38% 51% , 54% 57% , 75% 57% , 100% 52% , 100% 100% , 0% 100%)  }
+    clip-path: polygon(0% 38%, 21% 40% , 38% 51% , 54% 57% , 75% 57% , 100% 52% , 100% 100% , 0% 100%)  
+  }
   50%{
     clip-path: polygon(0% 50%, 16% 55%, 38% 54%, 54% 51%, 73% 43%, 100% 40%, 100% 100%, 0% 100%)
   }
