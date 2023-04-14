@@ -20,10 +20,20 @@ class StoresController < ApplicationController
             render :new
         end
     end
+    # def show
+
+    #     @comment = Comment.new
+    #     @comments = @store.comments.order(created_at: :desc)
+    # end
     def show
-        @comment = Comment.new
-        @comments = @store.comments.order(created_at: :desc)
-    end
+        if @store.nil?
+          not_found
+        else
+          @comment = Comment.new
+          @comments = @store.comments.order(created_at: :desc)
+        end
+      end
+
     def edit
         
     end

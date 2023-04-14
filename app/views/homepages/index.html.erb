@@ -15,8 +15,14 @@
 
     </section>
     <section class="py-10 text-center">
-        <%= link_to '登入' , new_user_session_path , class:" btn-big mx-4"%>
-        <%= link_to '註冊' , new_user_registration_path , class:" btn-big mx-4"%>
+        <% if user_signed_in? %>
+            <%= link_to '主頁' , stores_path , class:"btn-big mx-4"%>
+            <%= link_to '登出', destroy_user_session_path, method: 'delete', class:" btn-big mx-4"%>
+        <% else%>
+            <%= link_to '登入' , new_user_session_path , class:" btn-big mx-4"%>
+            <%= link_to '註冊' , new_user_registration_path , class:" btn-big mx-4"%>
+
+        <% end %>
     </section>
 
 </section>
