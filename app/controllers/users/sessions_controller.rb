@@ -4,8 +4,11 @@ class Users::SessionsController < Devise::SessionsController
   # before_action :configure_sign_in_params, only: [:create]
 
   # GET /resource/sign_in
+  
   # def new
-  #   super
+    # respond_to do |format|
+    #   format.html { render partial: "sessions/new" }
+    # end
   # end
 
   # POST /resource/sign_in

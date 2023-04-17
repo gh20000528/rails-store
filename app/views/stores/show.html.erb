@@ -19,7 +19,7 @@
             <h2 class="mb-5 text-lg font-bold text-center">評論</h2>
             <div class="pb-10 text-center">
             
-                <%= form_with(model: @comment,id:'comment-form',id:'comment-form', url: store_comments_path(@store), data:{ controller: 'comment-form'} ) do |form| %>
+                <%= form_with(model: @comment,id:'comment-form', url: store_comments_path(@store), data:{ controller: 'comment-form'} ) do |form| %>
                     <%= form.text_area :content,
                         class: 'w-1/2 rounded ',
                         rows: 3 ,
