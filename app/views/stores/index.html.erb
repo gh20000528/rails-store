@@ -1,8 +1,6 @@
-<main class="container " >
 
-
-
-    <section class="text-center "  >
+<main class="container" >
+    <section class="text-centers"  >
         <div data-controller="hello">
             <h1 class="mb-3 text-3xl text-white">店面列表</h1>
         </div>
@@ -31,26 +29,12 @@
                     <%= link_to '檢視' , store_path(store),  class:"  btn btn-disable "%>
                     <%= link_to '修改' , edit_store_path(store), class:" btn btn-disable "%>
                     <%= link_to '刪除' , store_path(store) , method:'delete' , class:" btn btn-disable "%>
-                
                 </div>
-                
             </div>
-
-
         <% end %>
-
-
-
     </section>
     <section class="text-center text-white my-7">
         <%== pagy_nav(@pagy) %>
     </section>
-
-
-
 </main>
-
-
-
-
 

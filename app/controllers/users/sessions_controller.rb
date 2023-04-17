@@ -11,9 +11,11 @@ class Users::SessionsController < Devise::SessionsController
     # end
   # end
 
-  # POST /resource/sign_in
+  # # POST /resource/sign_in
   # def create
   #   super
+
+  #   redirect_to stores_path, turbolinks: {location: stores_path}
   # end
 
   # DELETE /resource/sign_out

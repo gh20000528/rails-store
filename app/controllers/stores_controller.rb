@@ -4,7 +4,7 @@ class StoresController < ApplicationController
     before_action :find_store, only: [:edit, :update, :show, :destroy]
     def index
         # @stores = Store.order(position: :asc) 
-        @pagy , @stores = pagy(Store.order(:position) , items: 9)
+        @pagy , @stores = pagy(Store.all.order(:position) , items: 9)
         if params[:keyword].present?
             @stores = @stores.search(params[:keyword])
         end

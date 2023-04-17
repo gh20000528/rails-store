@@ -3,7 +3,7 @@ class ApplicationController < ActionController::Base
   rescue_from ActiveRecord::RecordNotFound , with: :not_found
     def after_sign_in_path_for(resource)
         # your path
-        stores_path 
+        stores_path
     end
 
 
