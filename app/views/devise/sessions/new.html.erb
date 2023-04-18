@@ -4,7 +4,7 @@
     <section class="py-8 my-10 text-center bg-white rounded-md">
       <h2 class="text-2xl text-center ">登入</h2>
     
-      <%= form_for(resource, as: resource_name, url: session_path(resource_name), data: {turbo: false}) do |f| %>
+      <%= form_for(resource, as: resource_name, url: session_path(resource_name), data: { turbo: false })  do |f| %>
         <div class="my-5">
           <%= f.label :email , '信箱'%><br />
           <%= f.email_field :email,class:"rounded-md", autofocus: true, autocomplete: "email" %>

@@ -68,3 +68,5 @@ gem "acts_as_list", "~> 1.1"
 gem 'requestjs-rails'
 
 gem "devise", "~> 4.9"
+
+gem "swiper-rails", "~> 1.0"

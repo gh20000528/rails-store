@@ -4,6 +4,9 @@
 
 import { application } from "./application"
 
+import AosController from "./aos_controller"
+application.register("aos", AosController)
+
 import CommentFormController from "./comment_form_controller"
 application.register("comment-form", CommentFormController)
 
@@ -12,3 +15,4 @@ application.register("hello", HelloController)
 
 import SortableController from "./sortable_controller"
 application.register("sortable", SortableController)
+

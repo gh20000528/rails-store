@@ -208,6 +208,8 @@ GEM
     sqlite3 (1.6.2-arm64-darwin)
     stimulus-rails (1.2.1)
       railties (>= 6.0.0)
+    swiper-rails (1.0.4)
+      rails (>= 3.1)
     tailwindcss-rails (2.0.27-arm64-darwin)
       railties (>= 6.0.0)
     thor (1.2.1)
@@ -268,6 +270,7 @@ DEPENDENCIES
   selenium-webdriver (>= 4.0.0.rc1)
   spring
   sqlite3 (~> 1.4)
+  swiper-rails (~> 1.0)
   tailwindcss-rails (~> 2.0)
   turbolinks (~> 5)
   tzinfo-data
